@@ -1,0 +1,187 @@
+%-------------------------
+% Resume in Latex
+% Author : Dongsheng Wang
+% Website: https://github.com/wds33817
+% License : MIT
+%------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  {\textbf{}{\Large Dongsheng Wang}} & Email : \href{}{wds3817@gmail.com}\\
+  \href{}{https://www.linkedin.com/in/dongsheng-wang-3094b5216/} & Mobile : +61 478 590 767 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {Master of Science in Computer Science}{May. 2022 -- Dec. 2023}
+    \resumeSubheading
+      {Queensland International Business Academy}{Sydney, New South Wales}
+      {Professional Year in Computer Science}{March. 2019 -- March. 2020}
+    \resumeSubheading
+      {University of Canberra}{Canberra, ACT}
+      {Master of Information Technology and Systems}{Feb. 2018 -- March. 2019}
+    \resumeSubheading
+      {University of Tasmania}{Hobart, Tasmania}
+      {Graduate Diploma of Information Technology and Systems}{Feb. 2017 -- March. 2018}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {58.COM}{Chengdu, Sichuan}
+      {QA Engineer}{Feb 2014 - Dec 2016}
+      \resumeItemListStart
+         \resumeItem{Analysis Review}
+          {Reviewed requirements and specifications to understand software design standards.Collaborated with developers and product managers to stay current on product features and intended functionality.}
+        \resumeItem{Automation Testing}
+          {Use Selenium framework, JAVA, Chrome driver to do automation testing on website
+           Testing with consistent, thorough approaches.}
+        \resumeItem{Defects Management}
+          {Used Jira to document defects and report problems, Identified and tracked defects with Jira supported developers in resolving problems by completing additional tests.}
+        \resumeItem{Team Work}
+          {Collaborated with QA team to test software quality through manual and automated testing. Effectively interacted with multiple departments regarding defects and critical issues, working closely to develop innovative solutions.}
+        \resumeItem{Code Review}
+          {Supported test review, defect control and configuration management within delivery pipeline. Debugged code and located root causes of problems by reviewing configuration files and logs. Gathered data on integration issues and vulnerabilities and reported all findings, including improvement recommendations.}
+        \resumeItem{Load Testing}
+          {Use scripted Jmeter to do Performed load testing.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Virtual IT Group}{North Sydney, NSW}
+      {Software QA Tester}{April 2021 - Present}
+      \resumeItemListStart
+        \resumeItem{Automation Testing}
+          {Build from scratch by using Selenium Framework, C\#. Analyzing test cases and implementing them by writing scripts, changing action time to find edge cases bugs.}
+        \resumeItem{Manual Testing}
+          {Using different combinations of actions to find bugs which are difficult to find by using automation testing, adopting different exploration testing methods to find new bugs in each regression testing.}
+        \resumeItem{Workflows}
+          {Running Azure DevOps Pipelines to do CI/CD by setting up QA branch.}
+        \resumeItem{Performance Testing}
+          {Using Jmeter scripts to do SignalR connection density load testing and request load testing for every single page of the Orchestrator platform.}
+        \resumeItem{API Testing}
+          {Adopting REST-Assured Java Library to do API testing, combined with other Java automation framework. Also use Postman to test webhooks and MS graph API.}
+        \resumeItem{Unit test}
+          {Use virtual database to store mock data, finish up to 700 unit tests, and merged the changes into UAT branch. Making sure the developers will not break unit tests when they contribute new features.}
+        \resumeItem{Packages, Forms, Activities Testing}
+          {Testing packages by writing in package editor with YAML language to test different kinds of scenarios, combined with different forms, and activities written by Powershell functions.}
+        \resumeItem{Documentation Improvement}
+          {Improved documentation for the project by adding new activity name functionalities, terminologies and new features with Git command.}
+        \resumeItem{Test Plans}
+          {Design a variety of test cases for regression testing, smoke testing, sanity testing, etc.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  \resumeSubItem{MERN E-Commerce Web App} 
+    \resumeSubheading{Built an E-Commerce app using MERN Stack with React, Ant Design, Node.js, Express, and MongoDB. Developed admin dashboard, product management system, login registration system and password update features with Firebase and Redux, built CRUD REST API for searching and filtering product listings, Split code with React.lazy and Suspense, deployed to Heroku with MongoDB.}
+  \resumeSubItem{200 OK Market}
+    \resumeSubheading{Developed a Full-stack Marketplace web application for UC students and faculties buying and selling used stuff. Built Frontend with React-bootstrap, Bootswatch, React, and Redux on all features including posting items/messages. Developed Backend services with WebSocket and Microservices; Implemented real-time messaging using Redis}
+  \resumeSubItem{File System Design and Implementation}
+    \resumeSubheading{Designed and Implemented a file system with C; created contiguous memory allocation to maintain directory info and create/read/write/delete files (5MB-10MB). Developed file open & close API by initializing Volume Control Block and File Control Block to mock Linux open/close. Built buffered read & write & seek API by locating files in Logical Block Addressing and perform read/write on disk. Finished a shell program that called above API to achieve ls/cp/mv/md/rm/cd/pwd and transferred file with Linux}    
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \item{
+     \textbf{Programming Languages}{: HTML/CSS, Javascript, Typescript, Python, Ruby, Java, C/C++, C#, Go, Scala, SQL, Rust, Swift, PHP, Objective-C, Powershell}
+     \hfill
+     }
+    \item{ 
+     \textbf{Front-end}{:React, Redux, Thymeleaf, Apollo Client, Material-UI, Bootstrap}
+     }
+    \item {
+     \textbf{Back-end}{: Node.js, Ruby on Rails, Express, Flask, Redis, Spring Boot, Spring MVC, Hibernate, Kubernates, Docker, WebSocket, GraphQL, MongoDB, dynamoDB, MySQL, AWS}
+    }
+    \item {
+     \textbf{Development & Deployment}{: Git, Postman, Maven, Heroku, Tomcat}
+    }  
+     
+   
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
